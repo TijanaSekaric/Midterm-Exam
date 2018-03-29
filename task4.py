@@ -13,6 +13,19 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def velika_slova(recenica):
+    nova_recenica = ""
+
+    for karakter in recenica:
+        broj_slova = ord(karakter)
+        if broj_slova > 96 and broj_slova < 123:
+            broj_velikog_slova = broj_slova - 32
+            karakter = chr(broj_velikog_slova)
+        nova_recenica += karakter
+        return nova_recenica
+    recenica = input("Unesi: ")
+    nova_recenica = print(velika_slova(recenica))
+
 
 # Write your function here
 
