@@ -19,12 +19,29 @@
 ===================================================
 """
 
-# Write your function here
+def max_niza:
+niz_visina = [153, 183, 77, 191, 18]
+max_visina = niz_visina[0]
+
+for i in range(len(niz_visina)-1):
 
 
+    if max_visina < niz_visina[i+1]:
+         max_visina = niz_visina[i+1]:
 
-def main():
-    # Test your function here
+print(max_visina)
+
+def min_niza:
+niz_visina = [153, 183, 77, 191, 18]
+min_visina = niz_visina [0]
+
+    if min_visina < niz_visina[i + 1]:
+        min_visina = niz_visina[i + 1]:
+        print(min_visina)
+
+        print(max_visina)
+
+        # Test your function here
     pass
 
 main()
