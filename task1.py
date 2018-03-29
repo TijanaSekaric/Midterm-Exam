@@ -20,7 +20,13 @@
 
 
 
-def main():
+def main(povrsina_kruga):
+    r = poluprecnik_kruga
+    r = int(input("Unesite poluprecnik kruga"))
+    p = pi * r * r
+    print(povrsina_kruga, p)
+
+
     # Test your function here
     pass
 
