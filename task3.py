@@ -15,5 +15,16 @@
 * in which your solution might not work.
 ===================================================
 """
+def main():
+x = str(input("Unesite broj:"))
+if not x.nonnegative(x<0)
+    print("Please enter number")
+    guit()
+x = int(pozitive(x>0))
+
+    print("Number is nonnegative!")
+else:
+    print("Number is negative!")
+
 
 # Write your code here
