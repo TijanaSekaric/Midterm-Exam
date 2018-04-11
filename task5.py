@@ -19,29 +19,42 @@
 ===================================================
 """
 
-def max_niza:
-niz_visina = [153, 183, 77, 191, 18]
-max_visina = niz_visina[0]
 
-for i in range(len(niz_visina)-1):
+def get_profit(lista):
 
 
-    if max_visina < niz_visina[i+1]:
-         max_visina = niz_visina[i+1]:
+    def min(lista):
 
-print(max_visina)
+        min_lista = lista[0]
 
-def min_niza:
-niz_visina = [153, 183, 77, 191, 18]
-min_visina = niz_visina [0]
+        for i in range(len(lista) - 1):
 
-    if min_visina < niz_visina[i + 1]:
-        min_visina = niz_visina[i + 1]:
-        print(min_visina)
+            if min_lista > lista[i + 1]:
+                min_lista = lista[i + 1]
 
-        print(max_visina)
+        return min_lista
 
-        # Test your function here
+
+    def max(lista):
+
+        max_lista = lista[0]
+
+        for i in range(len(lista) - 1):
+
+            if max_lista < lista[i + 1]:
+                max_lista = lista[i + 1]
+
+        return max_lista
+
+
+    return max(lista) - min(lista)
+
+
+def main():
+    lista = [156.7,45.7,19.0,567.8]
+    print("Najveci ostvareni profit je: ", get_profit(lista))
     pass
 
+
 main()
+
