@@ -15,16 +15,26 @@
 * in which your solution might not work.
 ===================================================
 """
-def main():
-x = str(input("Unesite broj:"))
-if not x.nonnegative(x<0)
-    print("Please enter number")
-    guit()
-x = int(pozitive(x>0))
 
-    print("Number is nonnegative!")
-else:
-    print("Number is negative!")
 
 
 # Write your code here
+
+
+n = int(input("Koliko brojeva unosite? "))
+
+lista = []
+
+nenegativni = negativni = 0
+
+for i in range(n):
+    novi_broj = int(input("Unesite "+ str(i+1)+ ".broj: "))
+    lista.append(novi_broj)
+    if novi_broj < 0:
+        negativni += 1
+    else:
+        nenegativni += 1
+
+print("Vasa lista: ",str(lista))
+print("Nenegativnih brojeva u listi ima: ",nenegativni)
+print("Negativnih brojeva u listi ima: ", negativni)
