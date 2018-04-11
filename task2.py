@@ -1,3 +1,5 @@
+
+
 """
 ===================   TASK 2   ====================
 * Name: Product Of Digits
@@ -12,4 +14,25 @@
 ===================================================
 """
 
+
+
+
 # Write your code here
+
+
+
+broj = eval(input("Unesi cijeli broj: "))
+
+if not isinstance(broj,int):
+    print("Podresan unos!")
+    quit()
+
+proizvod = 1
+
+for i in str(abs(broj)):
+    proizvod *= int(i)
+
+if broj < 0:
+    print("Proizvod cifri datog broja je: ", (-1) * proizvod)
+else:
+    print("Proizvod cifri datog broja je: ", proizvod)
