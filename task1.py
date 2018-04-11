@@ -20,14 +20,18 @@
 
 
 
-def main(povrsina_kruga):
-    r = poluprecnik_kruga
-    r = int(input("Unesite poluprecnik kruga"))
-    p = pi * r * r
-    print(povrsina_kruga, p)
+
+import math
+
+def area_of_circle(r):
+    if not isinstance(r, float) and not isinstance(r, int):
+        return - 1
+    return (abs(r)**2)* math.pi
+
+def main():
+    povrsina = area_of_circle(-6)
+    print(povrsina)
 
 
-    # Test your function here
-    pass
 
 main()
